@@ -1,5 +1,7 @@
 //Global Variables
-float ptX1, ptY1, ptX2, ptY2, ptX3, ptY3, ptX4, ptY4, ptX5, ptY5, ptX6, ptY6, ptX7, ptY7, ptX8, ptY8, ptX9, ptY9;
+float ptX1, ptY1, ptX2, ptY2, ptX3, ptY3;//Organized pts into rows
+float ptX4, ptY4, ptX5, ptY5, ptX6, ptY6;
+float ptX7, ptY7, ptX8, ptY8, ptX9, ptY9;
 float rectWidth, rectHeight, ptDiameter;
 color black=0, resetWhite = 255, red = #F51111;
 void setup () 
@@ -11,31 +13,47 @@ displayOrientation();
 rectWidth = appWidth*1/3;
 rectHeight = appHeight*1/3;
 ptDiameter =appWidth*1/45;
-ptX1 = appWidth*0;
-ptY1 = appHeight*0;
+ptX1 = rectWidth *0;
+ptY1 = rectHeight*0;
+ptX2 = rectWidth;
+ptY2 = rectHeight*0;
+ptX3 = rectWidth*2;
+ptY3 = rectHeight*0;
+ptX4 = rectWidth*0;
+ptY4 = rectHeight;
+ptX5 = rectWidth;
+ptY5 = rectHeight;
+ptX6 = rectWidth*2;
+ptY6 = rectHeight;
+ptX7 = rectWidth*0;
+ptY7 = rectHeight*2;
+ptX8 = rectWidth;
+ptY8 = rectHeight*2;
+ptX9 = rectWidth*2;
+ptY9 = rectHeight*2;
 }//End setup
 //
 void draw () 
 {
 rect(ptX1, ptY1, rectWidth, rectHeight);
 rect(ptX2, ptY2, rectWidth, rectHeight);
-//rect(ptX3, ptY3, rectWidth, rectHeight);
-//rect(ptX4, ptY4, rectWidth, rectHeight);
-//rect(ptX5, ptY5, rectWidth, rectHeight);
-//rect(ptX6, ptY6, rectWidth, rectHeight);
-//rect(ptX7, ptY7, rectWidth, rectHeight);
-//rect(ptX8, ptY8, rectWidth, rectHeight);
-//rect(ptX9, ptY9, rectWidth, rectHeight);
+rect(ptX3, ptY3, rectWidth, rectHeight);
+rect(ptX4, ptY4, rectWidth, rectHeight);
+rect(ptX5, ptY5, rectWidth, rectHeight);
+rect(ptX6, ptY6, rectWidth, rectHeight);
+rect(ptX7, ptY7, rectWidth, rectHeight);
+rect(ptX8, ptY8, rectWidth, rectHeight);
+rect(ptX9, ptY9, rectWidth, rectHeight);
 fill(black);
 ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
-ellipse(ptX1, ptY1, ptDiameter, ptDiameter);
+ellipse(ptX2, ptY2, ptDiameter, ptDiameter);
+ellipse(ptX3, ptY3, ptDiameter, ptDiameter);
+ellipse(ptX4, ptY4, ptDiameter, ptDiameter);
+ellipse(ptX5, ptY5, ptDiameter, ptDiameter);
+ellipse(ptX6, ptY6, ptDiameter, ptDiameter);
+ellipse(ptX7, ptY7, ptDiameter, ptDiameter);
+ellipse(ptX8, ptY8, ptDiameter, ptDiameter);
+ellipse(ptX9, ptY9, ptDiameter, ptDiameter);
 fill(resetWhite);
 }//End draw
 //
