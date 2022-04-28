@@ -1,10 +1,11 @@
 //Global Variables
 //Points are organized by row and actually (hint-hint) value
-int numberOfPoints = 17;
+int numberOfPoints = 21;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
 float rectWidth, rectHeight, ptDiameter;
 color black=0, resetWhite = 255, red = #ff0000;
+
 void setup () 
 {
 fullScreen();//displayWidth, displayHeight
@@ -15,37 +16,17 @@ rectWidth = appWidth*1/3;
 rectHeight = appHeight*1/3;
 ptDiameter = appWidth*1/45;
 //
-for (int i=1; i<ptX.length ; i+=4) {
-ptX[i] = rectWidth*0;
+for(int j=0; j<4; j++ ){
+  for (int i=1; i<ptX.length ; i+=4) {
+    ptX[i+j] = rectWidth*j;
+  }
 }
-//
-for (int i=2; i<ptX.length ; i+=4) {
-ptX[i]  = rectWidth;
+for(int j=0; j<4; j++){
+  for (int i=1; i<ptX.length; i++) {
+    ptY[i+j] = rectHeight*j;
+  }
 }
-//
-for (int i=3; i<ptX.length ; i+=4) {
-ptX[i] = rectWidth*2;
-}
-//
-for (int i=4; i<ptX.length ; i+=4) {
-ptX[i] = rectWidth*3;
-}
-//
-for (int i=1; i<ptX.length; i++) {
-  ptY[i] = rectHeight*0;
-}
-//
-for (int i=5; i<ptX.length; i++) {
-  ptY[i] = rectHeight;
-}
-//
-for (int i=9; i<ptX.length; i++) {
-  ptY[i] = rectHeight*2;
-}
-//
-for (int i=13; i<ptX.length; i++) {
-  ptY[i] = rectHeight*3;
-}
+
 //
 println("\nX-values are: ");
 printArray(ptX);
