@@ -31,10 +31,27 @@ for (int i=4; i<ptX.length ; i+=4) {
 ptX[i] = rectWidth*3;
 }
 //
-ptY[1] = ptY[2] = ptY[3]  = ptY[4] = rectHeight*0;
-ptY[5] = ptY[6] = ptY[7] = ptY[8] =  rectHeight;
-ptY[9] = ptY[10] = ptY[11] = ptY[12] = rectHeight*2;
-ptY[13] = ptY[14] = ptY[15] = ptY[16] = rectHeight*3;
+for (int i=1; i<ptX.length; i++) {
+  ptY[i] = rectHeight*0;
+}
+//
+for (int i=5; i<ptX.length; i++) {
+  ptY[i] = rectHeight;
+}
+//
+for (int i=9; i<ptX.length; i++) {
+  ptY[i] = rectHeight*2;
+}
+//
+for (int i=13; i<ptX.length; i++) {
+  ptY[i] = rectHeight*3;
+}
+//
+println("\nX-values are: ");
+printArray(ptX);
+println("\nY-values are: ");
+printArray(ptY);
+//
 }//End setup
 //
 void draw () 
