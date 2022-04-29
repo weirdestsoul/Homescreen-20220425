@@ -1,6 +1,6 @@
 //Global Variables
 //Points are organized by row and actually (hint-hint) value
-int numberOfPoints = 21;
+int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
 float rectWidth, rectHeight, ptDiameter;
@@ -22,8 +22,8 @@ for(int j=0; j<4; j++ ){
   }
 }
 for(int j=0; j<4; j++){
-  for (int i=1; i<ptX.length; i++) {
-    ptY[i+j] = rectHeight*j;
+  for (int i=1; i<ptY.length; i++) {
+    (ptY[i+j]) = rectHeight*j ;
   }
 }
 
