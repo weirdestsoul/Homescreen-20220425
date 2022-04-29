@@ -5,7 +5,12 @@ float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
 float rectWidth, rectHeight, ptDiameter;
 color black=0, resetWhite = 255, red = #ff0000;
-
+int numberOfButtons = 4; //will be 9
+float[] buttonX = new float[numberOfButtons];
+float[] buttonY = new float[numberOfButtons];
+float[] buttonWidth = new float[numberOfButtons];
+float[] buttonHeight = new float[numberOfButtons];
+//
 void setup () 
 {
 fullScreen();//displayWidth, displayHeight
@@ -16,14 +21,15 @@ rectWidth = appWidth*1/3;
 rectHeight = appHeight*1/3;
 ptDiameter = appWidth*1/45;
 //
-for(int j=0; j<4; j++ ){
+for(int h=0; h<4; h++ ){
   for (int i=1; i<ptX.length ; i+=4) {
-    ptX[i+j] = rectWidth*j;
+    ptX[i+h] = rectWidth*h;
   }
 }
+//
 for(int j=0; j<4; j++){
-  for (int i=1; i<ptY.length; i++) {
-    (ptY[i+j]) = rectHeight*j ;
+  for (int i=1; i<5; i++) {
+    (ptY[i+j*4]) = rectHeight*j;
   }
 }
 
@@ -32,6 +38,21 @@ println("\nX-values are: ");
 printArray(ptX);
 println("\nY-values are: ");
 printArray(ptY);
+//
+buttonX[1] = appWidth*(1.0/3.0)*(1.0/3.0); //Section 1; subsection 2, numerator is 1
+buttonY[1] = appHeight*(1.0/3.0)*(1.0/3.0); //Section 1; subsection 2, numerator is 1
+buttonWidth[1] = appWidth*(1.0/3.0)*(1.0/3.0); //Width Denominator count = 9
+buttonHeight[1] = appHeight*(1.0/3.0)*(1.0/3.0); //Height Denominator count = 9
+//
+buttonX[2] = appWidth*(1.0/2.0); //Section 2, subsection 2
+buttonY[2] = appHeight*(1.0/3.0); //Section 2, subsection 1
+buttonWidth[2] = appWidth*(1.0/3.0)*(1.0/2.0); //Width Denominator count = 6
+buttonHeight[2] = appHeight*(1.0/3.0)*(1.0/2.0); //Height Denominator count = 6
+//
+buttonX[3] = appWidth*(13.0/15.0); //Section 3, subsection 2
+buttonY[3] = appHeight*(4.0/5.0); //Section 3, subsection 4
+buttonWidth[3] = appWidth*(1.0/3.0)*(1.0/5.0); //Width Denominator count = 15
+buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); //Width Denominator count = 15
 //
 }//End setup
 //
@@ -69,6 +90,13 @@ ellipse(ptX[14], ptY[14], ptDiameter, ptDiameter);
 ellipse(ptX[15], ptY[15], ptDiameter, ptDiameter);
 ellipse(ptX[16], ptY[16], ptDiameter, ptDiameter);
 fill(resetWhite);
+//
+fill(black);
+rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]);
+rect(buttonX[2], buttonY[2], buttonWidth[2], buttonHeight[2]);
+rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
+fill(resetWhite);
+//
 }//End draw
 //
 void keyPressed () 
