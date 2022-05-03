@@ -69,7 +69,7 @@ void draw() {
   rect(ptX[10], ptY[10], rectWidth, rectHeight);
   rect(ptX[11], ptY[11], rectWidth, rectHeight);
   //
-  //HoverOver is Yellow
+  //HoverOver
   if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {
     fill(yellow);
     rect(buttonX[1], buttonY[1], buttonWidth[1], buttonHeight[1]); //same rect() as above
@@ -111,7 +111,7 @@ void draw() {
   ellipse(ptX[9], ptY[9], ptDiameter, ptDiameter);
   ellipse(ptX[10], ptY[10], ptDiameter, ptDiameter);
   ellipse(ptX[11], ptY[11], ptDiameter, ptDiameter);
-  fill(resetWhite); //Best Practice
+  fill(resetWhite); 
   //
   fill(red);
   //Points for all other ellipses must be red
@@ -122,7 +122,7 @@ void draw() {
   ellipse(ptX[14], ptY[14], ptDiameter, ptDiameter);
   ellipse(ptX[15], ptY[15], ptDiameter, ptDiameter);
   ellipse(ptX[16], ptY[16], ptDiameter, ptDiameter);
-  fill(resetWhite); //Best Practice
+  fill(resetWhite); 
 }//End draw
 //
 void keyPressed() {
