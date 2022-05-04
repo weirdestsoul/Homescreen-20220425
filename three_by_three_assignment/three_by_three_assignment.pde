@@ -1,7 +1,7 @@
 //Global Variables
 color black=0, resetWhite=255; 
-color red=color(255, 0, 0), yellow=color(255, 255, 0); //Night Mode colours
-Boolean turnOnYellow=false;
+color red=color(255, 0, 0), yellow=color(255, 255, 0), blue=#0F0AC6, poop=#864E04; //Night Mode colours
+Boolean turnOnYellow=false, turnOnBlue=false, turnOnPoop=false;
 float rectWidth, rectHeight, ptDiameter;
 //Points are organized by row and value
 int numberOfPoints = 17;
@@ -90,7 +90,11 @@ for(int j=0; j<4; j++){
 void draw() {
   //Rectangles must be 3 by 3
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
-  rect(ptX[2], ptY[2], rectWidth, rectHeight);
+  //
+  if ( turnOnYellow==true ) {fill(yellow);} else if (turnOnBlue == true ) {fill(blue);} else if (turnOnPoop == true ) {fill(poop);}
+  rect(ptX[2], ptY[2], rectWidth, rectHeight);//Buttons change the Colour of RECT(#2)
+  //
+  fill(resetWhite);
   rect(ptX[3], ptY[3], rectWidth, rectHeight);
   rect(ptX[5], ptY[5], rectWidth, rectHeight);
   rect(ptX[6], ptY[6], rectWidth, rectHeight);
@@ -201,5 +205,33 @@ void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() {
+  
+  if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) {println("BTN 1 Activated");
+  if (turnOnYellow==false){
+    turnOnYellow = true;
+    turnOnBlue=false;
+    turnOnPoop=false;
+} else {turnOnYellow=false;}}
+//
+  if (mouseX>=buttonX[2] && mouseX<=buttonX[2]+buttonWidth[2] && mouseY>=buttonY[2] && mouseY<=buttonY[2]+buttonHeight[2]) {println("BTN 2 Activated");
+  if (turnOnBlue==false){
+    turnOnYellow = false;
+    turnOnBlue=true;
+    turnOnPoop=false;
+} else { turnOnBlue=false;}}
+//
+  if (mouseX>=buttonX[3] && mouseX<=buttonX[3]+buttonWidth[3] && mouseY>=buttonY[3] && mouseY<=buttonY[3]+buttonHeight[3]) {println("BTN 3 Activated");
+  if (turnOnPoop==false){
+    turnOnYellow = false;
+    turnOnBlue=false;
+    turnOnPoop=true;
+} else {turnOnPoop=false;}}
+//
+  if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4]) {println("BTN 4 Activated");
+turnOnYellow = false;
+turnOnBlue=false;
+turnOnPoop=false;
+}
+ 
 }//End mousePressed
 //
