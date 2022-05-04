@@ -7,7 +7,7 @@ float rectWidth, rectHeight, ptDiameter;
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
-int numberofButtons = 4; //will be 9
+int numberofButtons = 10; //will be 10
 float[] buttonX = new float[numberofButtons];
 float[] buttonY = new float[numberofButtons];
 float[] buttonWidth = new float[numberofButtons];
@@ -35,20 +35,50 @@ for(int j=0; j<4; j++){
   }
 }
 //
-  buttonX[1] = appWidth*(1.0/3.0)*(1.0/3.0); //Section 1; subsection 2, numerator is 1
-  buttonY[1] = appHeight*(1.0/3.0)*(1.0/3.0); //Section 1; subsection 2, numerator is 1
-  buttonWidth[1] = appWidth*(1.0/3.0)*(1.0/3.0); //Width Denominator count = 9 ... 1/9
-  buttonHeight[1] = appHeight*(1.0/3.0)*(1.0/3.0); //Height Denominator count = 9 ... 1/9
+  buttonX[1] = appWidth*(1.0/3.0)*(1.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonY[1] = appHeight*(1.0/3.0)*(8.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonWidth[1] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[1] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
   //
-  buttonX[2] = appWidth*(3.0/6.0); //Section 2, subsection 2, numerator is 3
-  buttonY[2] = appHeight*(2.0/6.0); //Section 2, subsection 1, numerator is 2
-  buttonWidth[2] = appWidth*(1.0/3.0)*(1.0/2.0); //Denominator of 6
-  buttonHeight[2] = appHeight*(1.0/3.0)*(1.0/2.0); //Denominator of 6
+  buttonX[2] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
+  buttonY[2] = appHeight*(1.0/3.0)*(8.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonWidth[2] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[2] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
   //
-  buttonX[3] = appWidth*(11.0/15.0); //Section 3, subsection 2, Numerator is 11
-  buttonY[3] = appHeight*(13.0/15.0); //Section 3, subsection 4, Numerator is 14
-  buttonWidth[3] = appWidth*(1.0/3.0)*(1.0/5.0); //Denominator is 15
-  buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/5.0); //Denominator is 15
+  buttonX[3] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth*2; //Section 1; subsection 2, numerator is 1
+  buttonY[3] = appHeight*(1.0/3.0)*(8.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonWidth[3] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[3] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
+  //
+  buttonX[4] = appWidth*(1.0/3.0)*(1.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonY[4] = appHeight*(1.0/3.0)*(8.0/10.0)+rectHeight; //Section 1; subsection 2, numerator is 1
+  buttonWidth[4] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[4] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
+  //
+  buttonX[5] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth*2; //Section 1; subsection 2, numerator is 1
+  buttonY[5] = appHeight*(1.0/3.0)*(8.0/10.0)+rectHeight; //Section 1; subsection 2, numerator is 1
+  buttonWidth[5] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[5] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
+  //
+  buttonX[6] = appWidth*(1.0/3.0)*(1.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonY[6] = appHeight*(1.0/3.0)*(8.0/10.0)+rectHeight*2; //Section 1; subsection 2, numerator is 1
+  buttonWidth[6] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[6] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
+  //
+  buttonX[7] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
+  buttonY[7] = appHeight*(1.0/3.0)*(8.0/10.0)+rectHeight*2; //Section 1; subsection 2, numerator is 1
+  buttonWidth[7] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[7] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
+  //
+  buttonX[8] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth*2; //Section 1; subsection 2, numerator is 1
+  buttonY[8] = appHeight*(1.0/3.0)*(8.0/10.0)+rectHeight*2; //Section 1; subsection 2, numerator is 1
+  buttonWidth[8] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[8] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
+  //
+  buttonX[9] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
+  buttonY[9] = appHeight*(1.0/3.0)*(6.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonWidth[9] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[9] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
   //
   printArray(buttonX);
   printArray(buttonY);
@@ -91,14 +121,56 @@ void draw() {
     fill(black);
     rect(buttonX[3], buttonY[3], buttonWidth[3], buttonHeight[3]);
   } //Button 3
-  if ( mouseX>=ptX[3] && mouseX<=ptX[3]+rectWidth && mouseY>=ptY[3] && mouseY<=ptY[3]+rectHeight ) {
+  if ( mouseX>=ptX[6] && mouseX<=ptX[6]+rectWidth && mouseY>=ptY[6] && mouseY<=ptY[6]+rectHeight ) {
     fill(yellow);
-    rect(ptX[3], ptY[3], rectWidth, rectHeight);
+    rect(ptX[6], ptY[6], rectWidth, rectHeight);
   } else {
     fill(black);
-    rect(ptX[3], ptY[3], rectWidth, rectHeight);
+    rect(ptX[6], ptY[6], rectWidth, rectHeight);
   } //Button 4 (Reset)
   fill(resetWhite); 
+   if (mouseX>=buttonX[4] && mouseX<=buttonX[4]+buttonWidth[4] && mouseY>=buttonY[4] && mouseY<=buttonY[4]+buttonHeight[4]) {
+    fill(yellow);
+    rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[4], buttonY[4], buttonWidth[4], buttonHeight[4]); //same rect() as above
+  } //Button 5
+   if (mouseX>=buttonX[5] && mouseX<=buttonX[5]+buttonWidth[5] && mouseY>=buttonY[5] && mouseY<=buttonY[5]+buttonHeight[5]) {
+    fill(yellow);
+    rect(buttonX[5], buttonY[5], buttonWidth[5], buttonHeight[5]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[5], buttonY[5], buttonWidth[5], buttonHeight[5]); //same rect() as above
+  } //Button 6
+   if (mouseX>=buttonX[6] && mouseX<=buttonX[6]+buttonWidth[6] && mouseY>=buttonY[6] && mouseY<=buttonY[6]+buttonHeight[6]) {
+    fill(yellow);
+    rect(buttonX[6], buttonY[6], buttonWidth[6], buttonHeight[6]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[6], buttonY[6], buttonWidth[6], buttonHeight[6]); //same rect() as above
+  } //Button 7
+   if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7]) {
+    fill(yellow);
+    rect(buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[7], buttonY[7], buttonWidth[7], buttonHeight[7]); //same rect() as above
+  } //Button 8
+   if (mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight[8]) {
+    fill(yellow);
+    rect(buttonX[8], buttonY[8], buttonWidth[8], buttonHeight[8]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[8], buttonY[8], buttonWidth[8], buttonHeight[8]); //same rect() as above
+  } //Button 9
+   if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight[9]) {
+    fill(yellow);
+    rect(buttonX[9], buttonY[9], buttonWidth[9], buttonHeight[9]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[9], buttonY[9], buttonWidth[9], buttonHeight[9]); //same rect() as above
+  } //Button 10
   //
   fill(black);
   //Starting pts for rect() must be 1-9 & filled black
