@@ -3,6 +3,7 @@
 
 void buttonFuntions() {
   if(mouseX>=ptX[6] && mouseX<=ptX[6]+rectWidth && mouseY>=ptY[6] && mouseY<=ptY[6]+rectHeight) buttonA=true;
+  //
   if(buttonA==true) {
   if (mouseX>=buttonX[1] && mouseX<=buttonX[1]+buttonWidth[1] && mouseY>=buttonY[1] && mouseY<=buttonY[1]+buttonHeight[1]) buttonB=true;}
   //
