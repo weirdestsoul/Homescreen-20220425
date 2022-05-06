@@ -91,6 +91,12 @@ void buttonDraw() {
     rect(buttonX[9], buttonY[9], buttonWidth[9], buttonHeight[9]); //same rect() as above
   } //Button 10
   //
+  if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10]) {
+    fill(yellow);
+    rect(buttonX[10], buttonY[10], buttonWidth[10], buttonHeight[10]); //same rect() as above
+  } else {
+    fill(black);
+    rect(buttonX[10], buttonY[10], buttonWidth[10], buttonHeight[10]);} //same rect() as above
   
   
   

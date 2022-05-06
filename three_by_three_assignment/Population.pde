@@ -2,7 +2,7 @@
 int numberOfPoints = 17;
 float[] ptX = new float[numberOfPoints];
 float[] ptY = new float[numberOfPoints];
-int numberofButtons = 10; //will be 10
+int numberofButtons = 11; //will be 11
 float[] buttonX = new float[numberofButtons];
 float[] buttonY = new float[numberofButtons];
 float[] buttonWidth = new float[numberofButtons];
@@ -35,7 +35,7 @@ for(int j=0; j<4; j++){
   buttonX[2] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
   buttonY[2] = appHeight*(1.0/3.0)*(2.0/10.0); //Section 1; subsection 2, numerator is 1
   buttonWidth[2] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
-  buttonHeight[2] = appHeight*(1.0/3.0)*(2.0/6.0); //Height Denominator count = 9 ... 1/9
+  buttonHeight[2] = appHeight*(1.0/3.0)*(2.0/9.0); //Height Denominator count = 9 ... 1/9
   //
   buttonX[3] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth*2; //Section 1; subsection 2, numerator is 1
   buttonY[3] = appHeight*(1.0/3.0)*(8.0/10.0); //Section 1; subsection 2, numerator is 1
@@ -70,7 +70,12 @@ for(int j=0; j<4; j++){
   buttonX[9] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
   buttonY[9] = appHeight*(1.0/3.0)*(6.0/10.0); //Section 1; subsection 2, numerator is 1
   buttonWidth[9] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
-  buttonHeight[9] = appHeight*(1.0/3.0)*(2.0/6.0); //Height Denominator count = 9 ... 1/9
+  buttonHeight[9] = appHeight*(1.0/3.0)*(2.0/9.0); //Height Denominator count = 9 ... 1/9
+  //
+  buttonX[10] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
+  buttonY[10] = appHeight*(1.0/3.0)*(4.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonWidth[10] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
+  buttonHeight[10] = appHeight*(1.0/3.0)*(2.0/9.0); //Height Denominator count = 9 ... 1/9
   //
   printArray(buttonX);
   printArray(buttonY);
