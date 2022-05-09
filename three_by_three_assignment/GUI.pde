@@ -1,10 +1,14 @@
 //Global Variables
 Boolean darkMode1 = true;
 Boolean darkMode2 = true;
+Boolean lightMode1 = false;
+Boolean lightMode2 = false;
 //
 void GUI() {
   if (darkMode1 == true) {
-     fill(orange);} else { fill(cyan);}
+     fill(orange);} 
+  if (darkMode1 == false) {
+    fill(cyan);}
   rect(ptX[1], ptY[1], rectWidth, rectHeight);
   rect(ptX[2], ptY[2], rectWidth, rectHeight);//Buttons change the Colour of RECT(#2)
   rect(ptX[3], ptY[3], rectWidth, rectHeight);
@@ -17,7 +21,9 @@ void GUI() {
   fill(resetWhite);
   //
    if (darkMode2 == true) {
-      fill(black);} else {fill(resetWhite);}
+      fill(black);}
+   if (darkMode2 == false) {
+       fill(resetWhite);}
   //Starting pts for rect() must be 1-9 & filled black
   ellipse(ptX[1], ptY[1], ptDiameter, ptDiameter);
   ellipse(ptX[2], ptY[2], ptDiameter, ptDiameter);

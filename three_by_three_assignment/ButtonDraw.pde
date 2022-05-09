@@ -97,7 +97,5 @@ void buttonDraw() {
   } else {
     fill(black);
     rect(buttonX[10], buttonY[10], buttonWidth[10], buttonHeight[10]);} //same rect() as above
-  
-  
-  
+
 }//End buttonDraw
