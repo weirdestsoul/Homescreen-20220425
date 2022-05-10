@@ -29,7 +29,7 @@ void buttonFuntions() {
   if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight[9]) exit();
   //
   if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10] && darkMode1 && darkMode2 == true){darkMode1=false; darkMode2=false;} 
-  if(mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10] && darkMode1 && darkMode2 == false)
+  else if(mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10] && darkMode1 && darkMode2 == false)
   {darkMode1=true; darkMode2=true;}
   
 }
