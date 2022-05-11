@@ -12,13 +12,6 @@ void sprite2() {
 }//End sprite2
 //
 void drawScene() {
-  pic1 = loadImage("pic1.jpg");
-  pic2 = loadImage("pic2.jpg");
-  pic3 = loadImage("pic3.jpg");
-  pic4 = loadImage("pic4.jpg");
-  pic5 = loadImage("pic5.jpg");
-  pic6 = loadImage("pic6.jpg");
-
  if (buttonA == true) image (pic1, ptX[1], ptY[1], displayWidth*1/3, displayHeight*1/3);
  //
  if (buttonB == true) image (pic2, ptX[3], ptY[3], displayWidth*1/3, displayHeight*1/3);
@@ -31,7 +24,15 @@ void drawScene() {
  //
  if (buttonF == true) image (pic6, ptX[10], ptY[10], displayWidth*1/3, displayHeight*1/3);
  //
- if (buttonG == true) sprite1();
+ if (buttonG == true) {
+ fill(skyBlue);
+ rect(ptX[11], ptY[11], rectWidth, rectHeight);
+ fill(grass);
+ rect(ptX[11], displayHeight*23/24, rectWidth, displayHeight*1/24);
+ fill(resetWhite);
+ 
+
+ }
  //
  //if (buttonH == true)
  }//End drawScene

@@ -77,6 +77,13 @@ for(int j=0; j<4; j++){
   buttonWidth[10] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
   buttonHeight[10] = appHeight*(1.0/3.0)*(2.0/9.0); //Height Denominator count = 9 ... 1/9
   //
+  pic1 = loadImage("pic1.jpg");
+  pic2 = loadImage("pic2.jpg");
+  pic3 = loadImage("pic3.jpg");
+  pic4 = loadImage("pic4.jpg");
+  pic5 = loadImage("pic5.jpg");
+  pic6 = loadImage("pic6.jpg");
+  //
   printArray(buttonX);
   printArray(buttonY);
   printArray(buttonWidth);
