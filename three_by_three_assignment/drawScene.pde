@@ -2,12 +2,19 @@
 PImage pic1, pic2, pic3, pic4, pic5, pic6;
 //
 void sprite1() {
-  
-  
+  rect(rectWidth*7/3, rectHeight*7/3, rectWidth*1/3, rectWidth*1/3);
+  triangle(rectWidth*5/2, rectHeight*21/10, rectWidth*9/4, rectHeight*7/3, rectWidth*11/4, rectHeight*7/3);
+  rect(rectWidth*71/30, rectHeight*30/12, rectWidth*3/24, rectWidth*5/24);
+  rect(rectWidth*151/60, rectHeight*30/12, rectWidth*3/24, rectWidth*3/24);
+  ellipse(rectWidth*59/24, rectHeight*320/120, rectHeight*1/40, rectHeight*1/40);
 }//End sprite1
 //
 void sprite2() {
-  
+  rect(rectWidth*7/3, rectHeight*7/3, rectWidth*1/3, rectWidth*1/3);
+  triangle(rectWidth*5/2, rectHeight*21/10, rectWidth*9/4, rectHeight*7/3, rectWidth*11/4, rectHeight*7/3);
+  rect(rectWidth*71/30, rectHeight*30/12, rectWidth*3/24, rectWidth*5/24);
+  rect(rectWidth*151/60, rectHeight*30/12, rectWidth*3/24, rectWidth*3/24);
+  ellipse(rectWidth*59/24, rectHeight*320/120, rectHeight*1/40, rectHeight*1/40);
   
 }//End sprite2
 //

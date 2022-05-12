@@ -4,6 +4,7 @@ color yellow = #FFFF00, orange = #EA9513, cyan = #149CDE, skyBlue = #5DADED, gra
 //
 void setup()
 {
+  frameRate(120);
   fullScreen(); //displayWidth, displayHeight
   displayOrientation();
   //
