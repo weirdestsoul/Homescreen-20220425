@@ -23,14 +23,17 @@ void buttonFuntions() {
   //
   if(buttonF==true) {
   if (mouseX>=buttonX[7] && mouseX<=buttonX[7]+buttonWidth[7] && mouseY>=buttonY[7] && mouseY<=buttonY[7]+buttonHeight[7]) buttonG=true;}
-  if(buttonG==true) {
-  if (mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight[8]);}
+if(buttonG==true) {
+  if (mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight[8]){
+    if(house == true) {house = false;} else {house = true;}
+  }
+}
   //
-  if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight[9]) exit();
+  if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight[9]) {exit();}
   //
-  if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10] && darkMode1 && darkMode2 == true){darkMode1=false; darkMode2=false;} 
-  else if(mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10] && darkMode1 && darkMode2 == false)
-  {darkMode1=true; darkMode2=true;}
-  
+  if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10] ){
+    if(darkMode1 && darkMode2 && darkMode3 && darkMode4 == true){ darkMode1=false; darkMode2=false; darkMode3=false; darkMode4 = false;} else {
+  darkMode1=true; darkMode2=true; darkMode3=true; darkMode4 = true;}
+  }  
 }
 //End buttonFunctions

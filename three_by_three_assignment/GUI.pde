@@ -1,8 +1,8 @@
 //Global Variables
 Boolean darkMode1 = true;
 Boolean darkMode2 = true;
-Boolean lightMode1 = false;
-Boolean lightMode2 = false;
+Boolean darkMode3 = true;
+Boolean darkMode4 = true;
 //
 void GUI() {
   if (darkMode1 == true) {

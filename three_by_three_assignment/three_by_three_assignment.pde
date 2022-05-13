@@ -1,6 +1,6 @@
 //Global Variables
 color black=0, resetWhite=255; 
-color yellow = #FFFF00, orange = #EA9513, cyan = #149CDE, skyBlue = #5DADED, grass = #186404;
+color yellow = #FFFF00, orange = #EA9513, cyan = #149CDE, pink = #E879F5;
 //
 void setup()
 {
@@ -15,6 +15,7 @@ void setup()
   GUI();
   drawScene();
   buttonDraw();
+
 }//End draw
 //
 void keyPressed() {
