@@ -8,6 +8,8 @@ float[] buttonY = new float[numberofButtons];
 float[] buttonWidth = new float[numberofButtons];
 float[] buttonHeight = new float[numberofButtons];
 float rectWidth, rectHeight, ptDiameter;
+color black=0, resetWhite=255; 
+color yellow = #FFFF00, orange = #EA9513, cyan = #149CDE, pink = #E879F5;
 //
 void populationSetup() {
   //Population
