@@ -1,5 +1,6 @@
 //Global Variables
 Boolean buttonA=false, buttonB=false, buttonC=false, buttonD=false, buttonE=false, buttonF=false, buttonG=false, buttonH=false, buttonI=false,buttonJ=false, house = false;
+
 //
 
 void buttonDraw() {

@@ -14,7 +14,7 @@ void setup()
   GUI();
   drawScene();
   buttonDraw();
-
+  textDraw();
 }//End draw
 //
 void keyPressed() {

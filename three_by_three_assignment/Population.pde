@@ -9,9 +9,11 @@ float[] buttonWidth = new float[numberofButtons];
 float[] buttonHeight = new float[numberofButtons];
 float rectWidth, rectHeight, ptDiameter;
 color black=0, resetWhite=255; 
-color yellow = #FFFF00, orange = #EA9513, cyan = #149CDE, pink = #E879F5;
+color yellow = #FFFF00, orange = #EA9513, cyan = #149CDE, pink = #E879F5, blue = #0F21D8;
+PFont textFont;
 //
 void populationSetup() {
+  textFont = createFont("Comic Sans MS Bold",55);
   //Population
   rectWidth = appWidth*1/3;
   rectHeight = appHeight*1/3;
@@ -35,7 +37,7 @@ for(int j=0; j<4; j++){
   buttonHeight[1] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
   //
   buttonX[2] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
-  buttonY[2] = appHeight*(1.0/3.0)*(2.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonY[2] = appHeight*(1.0/3.0)*(3.0/20.0); //Section 1; subsection 2, numerator is 1
   buttonWidth[2] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
   buttonHeight[2] = appHeight*(1.0/3.0)*(2.0/9.0); //Height Denominator count = 9 ... 1/9
   //
@@ -70,12 +72,12 @@ for(int j=0; j<4; j++){
   buttonHeight[8] = appHeight*(1.0/3.0)*(1.0/6.0); //Height Denominator count = 9 ... 1/9
   //
   buttonX[9] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
-  buttonY[9] = appHeight*(1.0/3.0)*(6.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonY[9] = appHeight*(1.0/3.0)*(13.0/20.0); //Section 1; subsection 2, numerator is 1
   buttonWidth[9] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
   buttonHeight[9] = appHeight*(1.0/3.0)*(2.0/9.0); //Height Denominator count = 9 ... 1/9
   //
   buttonX[10] = appWidth*(1.0/3.0)*(1.0/10.0)+rectWidth; //Section 1; subsection 2, numerator is 1
-  buttonY[10] = appHeight*(1.0/3.0)*(4.0/10.0); //Section 1; subsection 2, numerator is 1
+  buttonY[10] = appHeight*(1.0/3.0)*( 4.0/10.0); //Section 1; subsection 2, numerator is 1
   buttonWidth[10] = appWidth*(1.0/3.0)*(8.0/10.0); //Width Denominator count = 9 ... 1/9
   buttonHeight[10] = appHeight*(1.0/3.0)*(2.0/9.0); //Height Denominator count = 9 ... 1/9
   //

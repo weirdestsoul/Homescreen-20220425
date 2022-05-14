@@ -1,6 +1,6 @@
 //Global Variables
 PImage pic1, pic2, pic3, pic4, pic5, pic6;
-color red = #FA0303, blue = #0212B7, roof = #2E2216, door = #CBCFD3, knob = #B77E02, skyBlue = #5DADED, grass = #186404;
+color red = #FA0303, roof = #2E2216, door = #CBCFD3, knob = #B77E02, skyBlue = #5DADED, grass = #186404;
 //
 void sprite1() {
   fill(blue);
@@ -31,7 +31,10 @@ void sprite2() {
 }//End sprite2
 //
 void drawScene() {
- if (buttonA == true) image (pic1, ptX[1], ptY[1], displayWidth*1/3, displayHeight*1/3);
+ if (buttonA == true){ image (pic1, ptX[1], ptY[1], displayWidth*1/3, displayHeight*1/3);
+ if (darkMode3 == true) {fill(black);} else {
+    fill(resetWhite);}
+ ellipse(displayWidth*1/10, displayHeight*1/20, displayWidth*1/6, displayHeight*1/15);}
  //
  if (buttonB == true) image (pic2, ptX[3], ptY[3], displayWidth*1/3, displayHeight*1/3);
  //
@@ -39,16 +42,24 @@ void drawScene() {
  //
  if (buttonD == true) image (pic4, ptX[7], ptY[7], displayWidth*1/3, displayHeight*1/3);
  //
- if (buttonE == true) image (pic5, ptX[9], ptY[9], displayWidth*1/3, displayHeight*1/3);
+ if (buttonE == true){ image (pic5, ptX[9], ptY[9], displayWidth*1/3, displayHeight*1/3);
+ if (darkMode3 == true) {fill(black);} else {
+    fill(resetWhite);}
+ ellipse(displayWidth*5/20, displayHeight*4/5, displayWidth*1/6, displayHeight*1/15);}
  //
- if (buttonF == true) image (pic6, ptX[10], ptY[10], displayWidth*1/3, displayHeight*1/3);
+ if (buttonF == true){ image (pic6, ptX[10], ptY[10], displayWidth*1/3, displayHeight*1/3);
+ if (darkMode3 == true) {fill(black);} else {
+    fill(resetWhite);}
+ ellipse(displayWidth*23/40, displayHeight*9/10, displayWidth*1/6, displayHeight*1/15);}
  //
  if (buttonG == true) {
  fill(skyBlue);
  rect(ptX[11], ptY[11], rectWidth, rectHeight);
  fill(grass);
  rect(ptX[11], displayHeight*23/24, rectWidth, displayHeight*1/24);
- fill(resetWhite);
+  if (darkMode3 == true) {fill(black);} else {
+    fill(resetWhite);}
+ ellipse(displayWidth*30/40, displayHeight*7/10, displayWidth*3/24, displayHeight*1/15);
   if(house == true) {sprite2();} else {
   sprite1();}
 }

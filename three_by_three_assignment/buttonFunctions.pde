@@ -1,4 +1,6 @@
  //Global Variables
+ Boolean textHouse = true;
+
 //
 
 void buttonFuntions() {
@@ -26,14 +28,18 @@ void buttonFuntions() {
 if(buttonG==true) {
   if (mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight[8]){
     if(house == true) {house = false;} else {house = true;}
-  }
-}
+  }}
+  //
+  if(buttonG==true) {
+  if (mouseX>=buttonX[8] && mouseX<=buttonX[8]+buttonWidth[8] && mouseY>=buttonY[8] && mouseY<=buttonY[8]+buttonHeight[8]){
+    if(textHouse == true) {textHouse = false;} else {textHouse = true;}
+  }}
   //
   if (mouseX>=buttonX[9] && mouseX<=buttonX[9]+buttonWidth[9] && mouseY>=buttonY[9] && mouseY<=buttonY[9]+buttonHeight[9]) {exit();}
   //
   if (mouseX>=buttonX[10] && mouseX<=buttonX[10]+buttonWidth[10] && mouseY>=buttonY[10] && mouseY<=buttonY[10]+buttonHeight[10] ){
-    if(darkMode1 && darkMode2 && darkMode3 && darkMode4 == true){ darkMode1=false; darkMode2=false; darkMode3=false; darkMode4 = false;} else {
-  darkMode1=true; darkMode2=true; darkMode3=true; darkMode4 = true;}
+    if(darkMode1 && darkMode2 && darkMode3 && darkMode4 && darkMode5 == true){ darkMode1=false; darkMode2=false; darkMode3=false; darkMode4 = false; darkMode5 = false;} else {
+  darkMode1=true; darkMode2=true; darkMode3=true; darkMode4 = true; darkMode5 = true;}
   }  
 }
 //End buttonFunctions

@@ -3,6 +3,7 @@ Boolean darkMode1 = true;
 Boolean darkMode2 = true;
 Boolean darkMode3 = true;
 Boolean darkMode4 = true;
+Boolean darkMode5 = true;
 //
 void GUI() {
   if (darkMode1 == true) {
